@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maple Horizons Recruitment Agency</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+<style>
+
+
+
+.featured-news-slider {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-news-slider h2 {
+  color: #d6001c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured-news-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.news-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.news-slide img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-slide p {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.read-more-btn {
+  background-color: #d6001c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  display: inline-block;
+  transition: background 0.3s;
+
+}
+
+
+
+
+
+
+
+.read-more-btn:hover {
+  background-color: #a00016;
+}
+
+.news-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #d6001c;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.news-nav.prev {
+  left: 10px;
+}
+
+.news-nav.next {
+  right: 10px;
+}
+
+/* Responsive styling */
+@media screen and (min-width: 768px) {
+  .news-slide {
+    min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .news-slide {
+    min-width: 33.3333%;
+  }
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+
+
+   <!-- Hamburger Icon
+    
+   <div class="menu-icon" onclick="openSidebar()">
+    &#9776;
+  </div>
+   
+   -->
+   
+  
+  
+
+   
+   <main class="governor">
+
+
+  
+    
+    
+
+
+      <!-- Fixed Header -->
+<div class="colo">
+
+  <div class="topbar">
+    
+    <img class="gov" src="/images/agency.png" alt="" width="100px" height="80">
+ 
+    <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    
+  </div>
+
+</div>
+
+
+
+
+
+ 
+
+
+
+
+  
+
+
+
+  <!-- Sidebar Overlay -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <span class="close-btn" onclick="closeSidebar()">&times;</span>
+    </div>
+
+    <ul class="menu">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      
+      </li>
+
+      
+      <li class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown(this)">Services <span>&#9662;</span></div>
+        <ul class="dropdown-menu">
+          <li><a href="#">Canada Migration</a></li>
+          <li><a href="#">Work Permit</a></li>
+          <li><a href="#">Visa</a></li>
+        
+        </ul>
+      </li>
+
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      
+
+
+     
+      
+    </ul>
+  </div>
+
+</main>
+
+       <!-- second Nav Menus  -->
+
+
+       <main class="shit9">
+        <nav class="main-nav">
+          <ul class="nav-menu">
+           
+            <li> <img class="gov-2" src="/images/agency.png" alt="" width="100px" height="80"></li>
+      
+            <li class="dropdown">
+              <a href="#">Home</a>
+              
+            </li>
+      
+            <li class="dropdown">
+              <a href="#">About</a>
+              
+            </li>
+      
+            <li class="dropdown">
+              <a href="#">Canada Migration</a>
+             </li>
+
+             <li class="dropdown">
+              <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-content">
+                <li><a href="#">Profolio</a></li>
+                
+                <li><a href="#">Work Permit</a></li>
+                <li><a href="#">Canada Visa</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Blog</a>
+             </li>
+      
+            <li><a href="#">Contact </a></li>
+            <i id="cart-icon" class="fas fa-shopping-cart"  style="cursor:pointer;"></i>
+          <div class="bord"><li><a  href="#">Contact us</a></li></div>   
+          
+          </ul>
+        </nav>
+      </main>
+      
+
+
+
+  
+
+<!------ the banner section-->
+
+
+
+   
+  <!--  
+
+
+
+
+-->
+
+
+<!-- Banner -->
+<header class="hero">
+  <h1>Work in Canada with Maple Horizons</h1>
+  <p>We partner with the Department of Migrant Workers (DMW) to recruit skilled Filipino workers for opportunities in Canada. Build your future with us today.</p>
+  <a href="#jobs" class="btn">View Job Openings</a>
+</header>
+
+
+
+
+
+<section class="image-block">
+  <div class="image-container">
+    <h1>We Partner With DMW </h1>
+    <img src="/images/Our_Vision-DjxQ-9Ze.png" alt="Sample Image">
+    <img src="/images/AIRTIP-4wREwhW2.png" alt="Sample Image">
+  </div>
+</section>
+
+<!-- About Section -->
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="benefits">
+    <div class="benefit">
+      <i class="fa-solid fa-briefcase"></i>
+      <h3>Legit Recruitment</h3>
+      <p>Accredited and partnered with the Philippine DMW for safe and reliable recruitment.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-house-user"></i>
+      <h3>Work & Live in Canada</h3>
+      <p>Opportunities in hospitality, healthcare, and skilled trades with great salaries and benefits.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-users"></i>
+      <h3>Supportive Agency</h3>
+      <p>We guide you from application to deployment and settlement in Canada.</p>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+
+<section class="image-block">
+  <div class="image-container">
+    <h1>We hiring Caregivers here in Canada  </h1>
+    <img src="/images/nursing-old-people.jpg" alt="Sample Image">
+  </div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+
+
+<section class="promo-block">
+  <div class="promo-container">
+    <div class="promo-copy">
+      <h1>Kick-start your Canada job search</h1>
+      <p>
+        Find employer-ready roles and immigration-friendly opportunities. Learn how to apply,
+        prepare your documents, and move forward with confidence.
+      </p>
+      <div class="promo-actions">
+        <a class="btn btn-primary" href="#apply">Apply Now</a>
+        <a class="btn btn-ghost" href="#learn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="promo-media">
+      <div class="video-frame">
+        <!-- Your YouTube video embedded correctly -->
+        <iframe
+          src="https://www.youtube.com/embed/A4mpJhcuEaI"
+          title="Introduction Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br>
+<br>
+<br>
+
+<section class="image-block">
+  <div class="image-container">
+    <h1>We hiring Factory and §construction Workers  here in Canada  </h1>
+    <img src="/images/felipino factory worker .jpg" alt="Sample Image">
+  </div>
+</section>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<section class="work-block">
+  <div class="work-container">
+    <h2>How We Work</h2>
+    <p>
+      As a seasoned employment agency, we understand the importance of flexibility in the workplace. 
+      That is why we make it easier for businesses to bring in temporary talent when needed.
+    </p>
+    <p>
+      Whether it's for a seasonal spike in demand, or to complete a project, temporary associates add 
+      value to any organization. Our team handles the entire process efficiently, ensuring the proper 
+      onboarding of staff, quick time-to-hire, and candidate analysis. We also focus on reducing attrition 
+      and guaranteeing compliance with local labour laws.
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- About Section -->
+<section>
+  <h2></h2>
+  <div class="benefits">
+    <div class="benefit">
+      <i class="fa-solid fa-list-check"></i>
+      <h3>Identify your needs      </h3>
+      <p>We work directly with you to find the right recruitment solutions that match the goals of your business.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <h3>Source and screen talent</h3>
+      <p>We work to quickly to identify the best people for your business using our extensive database and candidate attraction programs.</p>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-people-arrows"></i>
+      <h3>Match talent to business</h3>
+      <p>We give you a fully vetted shortlist and work hard to fill your open vacancies quickly so you can maintain productivity, even in peak times.</p>
+    </div>
+
+
+    <div class="benefit">
+      <i class="fa-solid fa-chalkboard-user"></i>
+      <h3>Training before the job</h3>
+      <p>We work with you to make sure everyone you hire is ready for work on the first day, complete with our safety-first attitude.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Jobs Section -->
+<section id="jobs">
+  <h2 style="color: white; font-weight: bold;">Job Openings here IN Canada </h2>
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <div class="jobs">
+
+    <div class="job-card">
+      <h3>Hotel Housekeeper</h3>
+      <p><strong>Salary:</strong> CAD 2,200/month</p>
+      <p>Maintain cleanliness in hotel rooms and public areas. Accommodation may be provided.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h3>Caregiver</h3>
+      <p><strong>Salary:</strong> CAD 2,500/month</p>
+      <p>Provide care and assistance to elderly and disabled clients in residential settings.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+
+    <div class="job-card">
+      <h3>Production Operator</h3>
+      <p><strong>Salary:</strong> CAD 2,400/month</p>
+      <p>Operate production line machines and monitor manufacturing processes.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h3>Food Service Worker</h3>
+      <p><strong>Salary:</strong> CAD 2,100/month</p>
+      <p>Assist in food preparation, customer service, and kitchen operations in restaurants.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h3>Processing Worker</h3>
+      <p><strong>Salary:</strong> CAD 2,300/month</p>
+      <p>Assist in food and material processing, sorting, and packing duties.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+
+    <div class="job-card">
+      <h3>Welder</h3>
+      <p><strong>Salary:</strong> CAD 3,000/month</p>
+      <p>Perform welding and metal fabrication duties in construction projects.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+
+     <!-- Hotel Jobs -->
+
+
+     <div class="job-card">
+      <h3>Forklift Operator</h3>
+      <p><strong>Salary:</strong> CAD 2,600/month</p>
+      <p>Safely operate forklifts for loading, unloading, and warehouse management.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+
+     <div class="job-card">
+      <h3>Farm Worker</h3>
+      <p><strong>Salary:</strong> CAD 2,200/month</p>
+      <p>Perform planting, harvesting, and general farm maintenance tasks.</p>
+      <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+
+
+  <div class="job-card"> 
+    <h3>Front Desk Receptionist</h3>
+    <p><strong>Salary:</strong> CAD 2,400/month</p>
+    <p>Assist guests with check-in/out, reservations, and customer service.</p>
+    <a href ='https://forms.gle/GREoCcWyvqpKsia98' target="_blank" class='apply-btn'>Apply Now</a>
+  </div>
+
+
+  <div class="job-card">
+    <h3>Nurse</h3>
+    <p><strong>Salary:</strong> CAD 3,500/month</p>
+    <p>Provide professional healthcare support in hospitals and clinics.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  <div class="job-card">
+    <h3>Doctor</h3>
+    <p><strong>Salary:</strong> CAD 6,000/month</p>
+    <p>Examine patients, diagnose illnesses, and provide treatment and care.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  <div class="job-card">
+    <h3>Factory Worker</h3>
+    <p><strong>Salary:</strong> CAD 2,300/month</p>
+    <p>Operate machinery, assemble products, and ensure quality control.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Machine Operator</h3>
+    <p><strong>Salary:</strong> CAD 2,600/month</p>
+    <p>Operate and monitor factory machines to ensure efficient production.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+
+  <div class="job-card">
+    <h3>Packaging Staff</h3>
+    <p><strong>Salary:</strong> CAD 2,200/month</p>
+    <p>Pack finished goods safely and prepare for shipment.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Quality Control Inspector</h3>
+    <p><strong>Salary:</strong> CAD 2,700/month</p>
+    <p>Inspect products to meet company and safety standards.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  <div class="job-card">
+    <h3>Hospital Cleaner</h3>
+    <p><strong>Salary:</strong> CAD 2,200/month</p>
+    <p>Maintain cleanliness and sanitation in healthcare facilities.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Healthcare Assistant</h3>
+    <p><strong>Salary:</strong> CAD 2,500/month</p>
+    <p>Assist patients with mobility, hygiene, and basic care under nurse supervision.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  <div class="job-card">
+    <h3>Plumber</h3>
+    <p><strong>Salary:</strong> CAD 2,900/month</p>
+    <p>Install and repair water supply lines, fixtures, and drainage systems.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <!-- Hotel Jobs -->
+<div class="job-card">
+  <h3>Hotel Cook</h3>
+  <p><strong>Salary:</strong> CAD 2,600/month</p>
+  <p>Prepare meals and manage kitchen operations in hotel dining facilities.</p>
+  <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+</div>
+
+<div class="job-card">
+  <h3>Hotel Security Guard</h3>
+  <p><strong>Salary:</strong> CAD 2,500/month</p>
+  <p>Ensure the safety and security of hotel guests and staff.</p>
+  <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+</div>
+
+  <div class="job-card">
+    <h3>Medical Office Clerk</h3>
+    <p><strong>Salary:</strong> CAD 2,400/month</p>
+    <p>Handle patient records, appointments, and basic administrative duties.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  <div class="job-card">
+    <h3>Bartender</h3>
+    <p><strong>Salary:</strong> CAD 2,400/month</p>
+    <p>Prepare and serve beverages to guests in hotels and restaurants.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  <!-- General Support -->
+  <div class="job-card">
+    <h3>Warehouse Worker</h3>
+    <p><strong>Salary:</strong> CAD 2,300/month</p>
+    <p>Pick, pack, and manage inventory in warehouse facilities.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Driver</h3>
+    <p><strong>Salary:</strong> CAD 2,600/month</p>
+    <p>Transport goods, materials, or passengers safely and on time.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+
+  <div class="job-card">
+    <h3>Hotel Kitchen Helper</h3>
+    <p><strong>Salary:</strong> CAD 2,100/month</p>
+    <p>Assist chefs with food preparation and maintain kitchen cleanliness.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Waiter/Waitress</h3>
+    <p><strong>Salary:</strong> CAD 2,200/month</p>
+    <p>Provide food and beverage service to hotel guests and customers.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+
+
+
+
+
+  <div class="job-card">
+    <h3>Construction Laborer</h3>
+    <p><strong>Salary:</strong> CAD 2,500/month</p>
+    <p>Perform general labor tasks at construction sites under supervision.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Carpenter</h3>
+    <p><strong>Salary:</strong> CAD 2,800/month</p>
+    <p>Build and repair wooden structures and frameworks in construction projects.</p>
+    <a href="https://forms.gle/yourgoogleformlink" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Mason</h3>
+    <p><strong>Salary:</strong> CAD 2,700/month</p>
+    <p>Lay bricks, stones, and concrete blocks for walls and structures.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Electrician</h3>
+    <p><strong>Salary:</strong> CAD 3,000/month</p>
+    <p>Install, maintain, and repair electrical systems in buildings.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <div class="job-card">
+    <h3>Construction Helper</h3>
+    <p><strong>Salary:</strong> CAD 2,400/month</p>
+    <p>Assist skilled workers at construction sites with manual labor tasks.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+  <!-- Factory Jobs -->
+  
+
+
+
+  <div class="job-card">
+    <h3>Quality Control Inspector</h3>
+    <p><strong>Salary:</strong> CAD 2,700/month</p>
+    <p>Inspect products to meet company and safety standards.</p>
+    <a href="https://forms.gle/GREoCcWyvqpKsia98" target="_blank" class="apply-btn">Apply Now</a>
+  </div>
+
+
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-container">
+
+    <!-- Column 1: Logo & About -->
+    <div class="footer-col">
+      <img src="/images/agency.png" alt="Agency Logo" class="footer-logo">
+      <p>
+        Maple Horizons Recruitment Agency connects skilled Filipino workers with 
+        opportunities in Canada across hotel, construction, factory, and healthcare industries.
+      </p>
+    </div>
+
+    <!-- Column 2: Gallery -->
+    <div class="footer-col">
+      <h3>Photo Gallery</h3>
+      <div class="footer-gallery">
+        <img src="/images/AIRTIP-4wREwhW2.png" alt="Gallery 1">
+        <img src="/images/Our_Vision-DjxQ-9Ze.png" alt="Gallery 2">
+        <img src="/images/ircc.jpg" alt="Gallery 3">
+        <img src="/images/DMW).svg" alt="Gallery 4">
+        <img src="/images/migration.jpg" alt="Gallery 5">
+        <img src="/images/team of caregiver .webp" alt="Gallery 5">
+      </div>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p><i class="fa-solid fa-phone"></i> +63 912 345 6789</p>
+      <p><i class="fa-solid fa-phone"></i> +1 234 001 1297</p>
+      <p><i class="fa-solid fa-envelope"></i> info@maplehorizons.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Manila, Philippines</p>
+      <p><i class="fa-solid fa-location-dot"></i> Aberta, Canada </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 Maple Horizons Recruitment Agency | Accredited with DMW Philippines</p>
+  </div>
+</footer>
+
+<!-- Font Awesome (for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  .main-footer {
+    background: #2d3941;
+    color: #ffffff;
+    padding: 3rem 1.5rem 1rem;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    max-width: 180px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f3f4f6;
+  }
+
+  .footer-col p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #e5e7eb;
+  }
+
+  .footer-col i {
+    margin-right: 8px;
+    color: #e11d48; /* accent color */
+  }
+
+  /* Gallery */
+  .footer-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .footer-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+
+  .footer-gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Bottom bar */
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #d1d5db;
+  }
+</style>
+
+ 
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+<!-- the caeer section -->
+
+
+
+<div class="making">
+  <button class="return-top" onclick="scrollToTop()">RETURN TO TOP ▲</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+  <script src="oduwa.js"></script>
+</body>
+</html>
+<script>
+    function openSidebar() {
+    document.getElementById('sidebar').classList.add('open');
+  }
+  
+  function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('open');
+  }
+  
+  function toggleDropdown(element) {
+    const parent = element.parentElement;
+    parent.classList.toggle('open');
+  }
+
+
+  
+
+  
+</script>
+
+
+
+
+
+<script>
+const videos = document.querySelectorAll('.dmw-video-wrapper video');
+const dots = document.querySelectorAll('.dmw-dot');
+let currentVideo = 0;
+
+function showVideo(index) {
+  videos.forEach((vid, i) => {
+    vid.classList.toggle('active', i === index);
+    dots[i].classList.toggle('active', i === index);
+  });
+}
+
+document.querySelector('.dmw-prev').addEventListener('click', () => {
+  currentVideo = (currentVideo - 1 + videos.length) % videos.length;
+  showVideo(currentVideo);
+});
+
+document.querySelector('.dmw-next').addEventListener('click', () => {
+  currentVideo = (currentVideo + 1) % videos.length;
+  showVideo(currentVideo);
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentVideo = index;
+    showVideo(index);
+  });
+});
+
+showVideo(currentVideo);
+
+
+
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+function toggleYear(sectionId, toggleElement) {
+      const section = document.getElementById(sectionId);
+      const isVisible = section.style.display === 'block';
+
+      // Toggle visibility
+      section.style.display = isVisible ? 'none' : 'block';
+
+      // Toggle rotation
+      toggleElement.classList.toggle('open', !isVisible);
+    }
+
+
+
+</script>
+
+
+<script>
+
+const track = document.querySelector('.carousel-track');
+const slides = document.querySelectorAll('.slide');
+let index = 0;
+let slideWidth = slides[0].offsetWidth + 20; // Includes margin
+
+function autoSlide() {
+  index++;
+  if (index > slides.length - 3) { // Show 3 at a time, reset when done
+    index = 0;
+  }
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+setInterval(autoSlide, 3000); // Auto slide every 3 seconds
+
+
+
+
+
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + slides.length) % slides.length;
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+});
+
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % slides.length;
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+});
+
+
+
+
+</script>
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector('.myIconSlider');
+    if (!slider) return;
+  
+    let iconWidth = 0;
+    let slideInterval;
+    let currentIndex = 0;
+  
+    function startAutoSlide() {
+      const icons = slider.querySelectorAll('.iconhead');
+      if (icons.length === 0) return;
+  
+      iconWidth = icons[0].offsetWidth + 16; // icon width + gap (gap = 1rem = 16px)
+      const totalIcons = icons.length;
+      const visibleIcons = Math.floor(slider.offsetWidth / iconWidth);
+      const maxIndex = totalIcons - visibleIcons;
+  
+      slideInterval = setInterval(() => {
+        currentIndex++;
+        if (currentIndex > maxIndex) currentIndex = 0;
+        slider.scrollTo({ left: currentIndex * iconWidth, behavior: 'smooth' });
+      }, 2500); // change every 2.5 seconds
+    }
+  
+    function stopAutoSlide() {
+      clearInterval(slideInterval);
+      slider.scrollTo({ left: 0 });
+      currentIndex = 0;
+    }
+  
+    function checkStart() {
+      if (window.innerWidth < 768) {
+        stopAutoSlide(); // Ensure previous interval is cleared
+        startAutoSlide();
+      } else {
+        stopAutoSlide();
+      }
+    }
+  
+    checkStart();
+    window.addEventListener('resize', checkStart);
+  });
+  </script>
+
+
+
+<!----- the features codes -->
+
+
+
+<script>
+  const fnSliderTrack = document.querySelector('.featured-news-track');
+  const fnSlides = document.querySelectorAll('.news-slide');
+  const fnPrevBtn = document.querySelector('.news-nav.prev');
+  const fnNextBtn = document.querySelector('.news-nav.next');
+
+  let fnCurrentIndex = 0;
+  const fnSlideCount = fnSlides.length;
+  const fnSlideWidth = () => fnSlides[0].offsetWidth;
+
+  function fnUpdateSlidePosition() {
+    fnSliderTrack.style.transform = `translateX(-${fnCurrentIndex * fnSlideWidth()}px)`;
+  }
+
+  function fnShowNextSlide() {
+    fnCurrentIndex = (fnCurrentIndex + 1) % fnSlideCount;
+    fnUpdateSlidePosition();
+  }
+
+  function fnShowPrevSlide() {
+    fnCurrentIndex = (fnCurrentIndex - 1 + fnSlideCount) % fnSlideCount;
+    fnUpdateSlidePosition();
+  }
+
+  fnNextBtn.addEventListener('click', fnShowNextSlide);
+  fnPrevBtn.addEventListener('click', fnShowPrevSlide);
+
+  // Auto Slide
+  let fnAutoSlide = setInterval(fnShowNextSlide, 5000);
+
+  // Pause on hover
+  document.querySelector('.slider-wrapper').addEventListener('mouseenter', () => {
+    clearInterval(fnAutoSlide);
+  });
+
+  document.querySelector('.slider-wrapper').addEventListener('mouseleave', () => {
+    fnAutoSlide = setInterval(fnShowNextSlide, 5000);
+  });
+
+  // Responsive resize fix
+  window.addEventListener('resize', fnUpdateSlidePosition);
+</script>
+
+
+
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+
+      // Collapse any open items
+      document.querySelectorAll('.faq-answer').forEach(item => {
+        if (item !== answer) {
+          item.classList.remove('show');
+          item.previousElementSibling.classList.remove('active');
+        }
+      });
+
+      // Toggle current
+      answer.classList.toggle('show');
+      button.classList.toggle('active');
+    });
+  });
+</script>
+
+
+
+
+<script>
+  const miniGallery = document.querySelector('.footer-mini-gallery');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        miniGallery.style.animationPlayState = 'running';
+        observer.unobserve(miniGallery);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(miniGallery);
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const lastIncidentDate = new Date("2024-11-01"); // Set your last incident date here
+    const now = new Date();
+    const msDiff = now - lastIncidentDate;
+    const totalDays = Math.floor(msDiff / (1000 * 60 * 60 * 24));
+
+    // Calculate months and days (approximate by 30 days/month)
+    const months = Math.floor(totalDays / 30);
+    const days = totalDays % 30;
+
+    const displayText = `${months} month${months !== 1 ? 's' : ''} and ${days} day${days !== 1 ? 's' : ''}`;
+    const counter = document.getElementById("safety-counter");
+
+    // Animate the counter
+    let current = 0;
+    const duration = 1000; // ms
+    const frameRate = 30; // ms per frame
+    const steps = duration / frameRate;
+    let step = 0;
+
+    const interval = setInterval(() => {
+      step++;
+      const progress = step / steps;
+      const currentDays = Math.floor(progress * totalDays);
+      const currentMonths = Math.floor(currentDays / 30);
+      const currentDayRemainder = currentDays % 30;
+
+      counter.textContent = `${currentMonths} month${currentMonths !== 1 ? 's' : ''} and ${currentDayRemainder} day${currentDayRemainder !== 1 ? 's' : ''}`;
+
+      if (step >= steps) {
+        clearInterval(interval);
+        counter.textContent = displayText;
+      }
+    }, frameRate);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  // Grab elements
+const cartIcon = document.getElementById("cart-icon");
+const cartSidebar = document.getElementById("cart-sidebar");
+const cartClose = document.getElementById("cart-close");
+const cartContent = document.getElementById("cart-content");
+const cartSubtotal = document.getElementById("cart-subtotal");
+
+// Internal storage for cart items
+let cartItems = [];
+
+// Utility to calculate subtotal
+function updateSubtotal() {
+  const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.qty, 0);
+  cartSubtotal.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
+}
+
+// Render cart items or empty message
+function renderCart() {
+  cartContent.innerHTML = "";
+  if (cartItems.length === 0) {
+    cartContent.innerHTML = "<p>No items found.</p>";
+  } else {
+    cartItems.forEach((item, index) => {
+      const itemDiv = document.createElement("div");
+      itemDiv.innerHTML = `
+        <div>
+          <strong>${item.name}</strong> x ${item.qty}<br>
+          $${(item.price * item.qty).toFixed(2)}
+        </div>
+        <button data-index="${index}" class="remove-btn">Remove</button>
+      `;
+      cartContent.appendChild(itemDiv);
+    });
+  }
+  updateSubtotal();
+}
+
+// Add new item or increase quantity if exists
+function addItemToCart(item) {
+  const existing = cartItems.find(i => i.id === item.id);
+  if (existing) {
+    existing.qty++;
+  } else {
+    cartItems.push({ ...item, qty: 1 });
+  }
+  renderCart();
+  openCart();
+}
+
+// Remove an item
+cartContent.addEventListener("click", e => {
+  if (e.target.classList.contains("remove-btn")) {
+    const idx = parseInt(e.target.getAttribute("data-index"), 10);
+    cartItems.splice(idx, 1);
+    renderCart();
+  }
+});
+
+// Open cart sidebar
+function openCart() {
+  cartSidebar.classList.add("open");
+}
+
+// Close cart sidebar
+cartClose.addEventListener("click", () => {
+  cartSidebar.classList.remove("open");
+});
+
+// Toggle cart on icon click
+cartIcon.addEventListener("click", () => {
+  cartSidebar.classList.toggle("open");
+});
+
+// Example: function you’d call when user adds an item
+function onProductAdd(id, name, price) {
+  addItemToCart({ id, name, price });
+}
+
+// Initial render
+renderCart();
+
+</script>
